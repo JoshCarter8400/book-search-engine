@@ -69,14 +69,14 @@ const SearchBooks = () => {
     console.log(bookToSave);
     // get token
     const token = Auth.loggedIn() ? Auth.getToken() : null;
-    console.log(token);
+
     if (!token) {
       return false;
     }
 
     try {
-      const { data } = await saveBook({
-        variables: { bookData: { ...bookToSave } },
+      await saveBook({
+        variables: { body: bookToSave },
       });
       console.log(saveBookIds);
       // if book successfully saves to user's account, save book id to state
