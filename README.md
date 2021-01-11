@@ -10,4 +10,5 @@ This application is used for searching for book using the Google books API. A us
 * Express
 * Node
 
-## View the application (here)[https://salty-mesa-30136.herokuapp.com/]
+## View the application click
+(Click here to start reading)[https://salty-mesa-30136.herokuapp.com/]
